@@ -2,14 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const path = require("path");
-const _dirname = path.dirname("");
-const buildPath = path.join(_dirname, "../frontend/dist");
+// const path = require("path");
+// const _dirname = path.dirname("");
+// const buildPath = path.join(_dirname, "../frontend/dist");
 
 // Initialize app
 const app = express();
 
-app.use(express.static(buildPath));
+// app.use(express.static(buildPath));
 
 const corsOptions = {
   origin: "*", // Frontend port
